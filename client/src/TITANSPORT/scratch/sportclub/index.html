@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>TITAN PERFORMANCE CLUB</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Metropolis:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#e5e2e1",
+                      "on-secondary-container": "#bab8b7",
+                      "surface-container": "#1e2020",
+                      "surface": "#121414",
+                      "surface-container-high": "#282a2b",
+                      "on-secondary-fixed-variant": "#474646",
+                      "primary": "#ffffff",
+                      "tertiary-container": "#e5e2e1",
+                      "inverse-primary": "#576500",
+                      "secondary-fixed": "#e5e2e1",
+                      "inverse-surface": "#e2e2e2",
+                      "on-tertiary-fixed": "#1b1b1c",
+                      "on-tertiary": "#303030",
+                      "primary-container": "var(--primary-container)",
+                      "on-surface": "#e2e2e2",
+                      "secondary": "#c8c6c5",
+                      "outline": "#909378",
+                      "primary-fixed": "var(--primary-fixed)",
+                      "on-tertiary-container": "#656464",
+                      "surface-tint": "var(--primary-fixed-dim)",
+                      "on-secondary": "#313030",
+                      "primary-fixed-dim": "var(--primary-fixed-dim)",
+                      "inverse-on-surface": "#2f3131",
+                      "on-primary": "#2c3400",
+                      "surface-container-low": "#1a1c1c",
+                      "tertiary": "#ffffff",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "surface-container-highest": "#333535",
+                      "secondary-container": "#4a4949",
+                      "error": "#ffb4ab",
+                      "on-surface-variant": "#c6c9ab",
+                      "surface-bright": "#37393a",
+                      "on-error": "#690005",
+                      "outline-variant": "#454932",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-primary-fixed": "var(--on-primary-fixed)",
+                      "on-background": "#e2e2e2",
+                      "surface-container-lowest": "#0c0f0f",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "surface-variant": "#333535",
+                      "error-container": "#93000a",
+                      "on-primary-container": "#5d6b00",
+                      "surface-dim": "#121414",
+                      "on-primary-fixed-variant": "#414c00",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-error-container": "#ffdad6",
+                      "background": "#121414"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "section-gap": "120px",
+                      "base": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Metropolis"],
+                      "label-sm": ["Metropolis"],
+                      "display-lg-mobile": ["Anton"],
+                      "headline-md": ["Anton"],
+                      "headline-lg": ["Anton"],
+                      "display-lg": ["Anton"],
+                      "body-md": ["Metropolis"],
+                      "label-lg": ["Metropolis"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+    <!-- Global CSS -->
+    <link href="assets/css/global.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-lg overflow-x-hidden antialiased">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full bg-surface/90 backdrop-blur-md transition-all duration-300" id="main-nav">
+    <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary-fixed dark:text-primary-fixed italic uppercase">TITAN CLUB</a>
+    <div class="hidden md:flex items-center space-x-8">
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="index.html">Home</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="schedule.html">Schedule</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="coaches.html">Coaches</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="membership.html">Membership</a>
+    </div>
+    <button class="hidden md:block font-label-lg text-label-lg uppercase tracking-wider bg-primary-fixed text-on-primary-fixed px-6 py-2 rounded scale-95 active:scale-90 transition-transform neon-glow">JOIN NOW</button>
+    <!-- Mobile Menu Icon -->
+    <button class="md:hidden text-primary-fixed">
+        <span class="material-symbols-outlined text-[32px]">menu</span>
+    </button>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative min-h-[921px] flex items-center px-margin-mobile md:px-margin-desktop pt-24 overflow-hidden bg-surface">
+    <!-- Sheared Background Image -->
+    <div class="absolute inset-0 bg-cover bg-center transform -skew-y-3 scale-110 origin-bottom-right opacity-60" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4EKNPDw2aicILFHBVQ4JPd3b0f28NYMiFcIxOcNFVZrEuoS9U30ID9zH4XSTlRk0nc45_qP-XpfoWEViFJOnnDbALBHWfyP1FLjPBgDo2aVuvlT9IMPlfsTHYHhVA04KSsV7XTFiq3rCRmolrFWq82ceSPCQOWBkjdJPwp7Fmaye6o_JeimjyLVIo0K37Y_O34s6lSuZqkw7nYUtbiqIZ1denlcHR9CSVwoq6MZEE-O72o5Ws6rQ5xDmgAdZMt1lCQo9zXICdr9Ux');"></div>
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+    
+    <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start mt-12 md:mt-0">
+        <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary uppercase italic tracking-tight mb-6 max-w-3xl leading-none drop-shadow-xl transform -skew-x-3">
+            PUSH YOUR <span class="text-primary-fixed">LIMITS</span>
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10 border-l-4 border-primary-fixed pl-4">
+            Elite performance training in a high-voltage environment. Join the absolute pinnacle of fitness engineering.
+        </p>
+        <a href="membership.html" class="bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md uppercase px-10 py-3 transform -skew-x-6 hover:scale-105 transition-all neon-glow flex items-center gap-2">
+            START TRAINING <span class="material-symbols-outlined text-[32px]">arrow_forward</span>
+        </a>
+    </div>
+</header>
+
+<!-- Features Section (Bento Grid Style) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-background relative z-20">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <!-- Feature 1 -->
+            <div class="bg-surface-container border border-white/5 rounded p-8 hover:border-primary-fixed/50 transition-colors duration-300 group">
+                <div class="w-16 h-16 rounded bg-surface-container-high flex items-center justify-center mb-6 text-primary-fixed group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-3">Modern Equipment</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">State-of-the-art biomechanical engineering. Only the heaviest, most precise tools for absolute gains.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-surface-container border border-white/5 rounded p-8 hover:border-primary-fixed/50 transition-colors duration-300 group relative overflow-hidden">
+                <!-- Subtle glow effect inside card -->
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-fixed/10 blur-2xl rounded-full"></div>
+                <div class="w-16 h-16 rounded bg-surface-container-high flex items-center justify-center mb-6 text-primary-fixed group-hover:scale-110 transition-transform relative z-10">
+                    <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">sports_kabaddi</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-3 relative z-10">Expert Coaches</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant relative z-10">Veteran athletes and certified biomechanics specialists dedicated to pushing you past the breaking point.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-surface-container border border-white/5 rounded p-8 hover:border-primary-fixed/50 transition-colors duration-300 group">
+                <div class="w-16 h-16 rounded bg-surface-container-high flex items-center justify-center mb-6 text-primary-fixed group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">calendar_clock</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-3">Flexible Schedule</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Late-night access and comprehensive class schedules designed around the life of a dedicated performer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Titan Labs: Biometrics Engine -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface relative z-20 overflow-hidden border-t border-b border-white/5">
+    <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-primary-fixed/5 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest block mb-1">TITAN LABS</span>
+            <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary uppercase italic">PERFORMANCE <span class="text-primary-fixed">ENGINE</span></h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-2">Tune your body with elite biomechanical metrics. Calculate your precise Daily Calorie Target (TDEE) and custom macronutrient splits in real-time.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-surface-container border border-white/10 p-8 rounded-lg shadow-2xl relative">
+            <!-- Inputs Column -->
+            <div class="space-y-6">
+                <h3 class="font-headline-md text-headline-md text-white uppercase border-b border-white/5 pb-2 mb-4">Input Specifications</h3>
+                
+                <!-- Height Slider -->
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="input-height" class="font-label-lg text-label-lg text-on-surface-variant uppercase">Height</label>
+                        <span class="font-headline-md text-[20px] text-primary-fixed"><span id="val-height">175</span> cm</span>
+                    </div>
+                    <input type="range" id="input-height" min="120" max="220" value="175" class="w-full h-1 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary-fixed" oninput="calculateBiometrics()">
+                </div>
+
+                <!-- Weight Slider -->
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="input-weight" class="font-label-lg text-label-lg text-on-surface-variant uppercase">Weight</label>
+                        <span class="font-headline-md text-[20px] text-primary-fixed"><span id="val-weight">75</span> kg</span>
+                    </div>
+                    <input type="range" id="input-weight" min="40" max="150" value="75" class="w-full h-1 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary-fixed" oninput="calculateBiometrics()">
+                </div>
+
+                <!-- Age Slider -->
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="input-age" class="font-label-lg text-label-lg text-on-surface-variant uppercase">Age</label>
+                        <span class="font-headline-md text-[20px] text-primary-fixed"><span id="val-age">25</span> years</span>
+                    </div>
+                    <input type="range" id="input-age" min="15" max="80" value="25" class="w-full h-1 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary-fixed" oninput="calculateBiometrics()">
+                </div>
+
+                <!-- Activity Level Dropdown -->
+                <div>
+                    <label for="input-activity" class="font-label-lg text-label-lg text-on-surface-variant uppercase block mb-2">Activity Profile</label>
+                    <select id="input-activity" class="w-full bg-surface-container-high text-white border border-white/10 rounded p-3 text-body-md focus:border-primary-fixed focus:ring-0 cursor-pointer" onchange="calculateBiometrics()">
+                        <option value="1.2">Sedentary (Office job, minimal training)</option>
+                        <option value="1.375">Lightly Active (1-3 days gym / week)</option>
+                        <option value="1.55" selected>Moderately Active (3-5 days intense / week)</option>
+                        <option value="1.725">Elite Performance (6-7 days extreme training)</option>
+                    </select>
+                </div>
+
+                <!-- Goals Selector -->
+                <div>
+                    <label class="font-label-lg text-label-lg text-on-surface-variant uppercase block mb-3">Athletic Objective</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <label class="cursor-pointer">
+                            <input type="radio" name="input-goal" value="cut" class="sr-only peer" onchange="calculateBiometrics()">
+                            <div class="text-center font-headline-md text-sm tracking-wider uppercase py-3 border border-white/10 rounded peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed peer-checked:border-primary-fixed hover:border-white/20 transition-all">CUT</div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="input-goal" value="maintain" checked class="sr-only peer" onchange="calculateBiometrics()">
+                            <div class="text-center font-headline-md text-sm tracking-wider uppercase py-3 border border-white/10 rounded peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed peer-checked:border-primary-fixed hover:border-white/20 transition-all">MAINTAIN</div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="input-goal" value="bulk" class="sr-only peer" onchange="calculateBiometrics()">
+                            <div class="text-center font-headline-md text-sm tracking-wider uppercase py-3 border border-white/10 rounded peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed peer-checked:border-primary-fixed hover:border-white/20 transition-all">BULK</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outputs Column -->
+            <div class="flex flex-col justify-between space-y-6 border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0 md:pl-8">
+                <div>
+                    <h3 class="font-headline-md text-headline-md text-white uppercase border-b border-white/5 pb-2 mb-6">Engine Diagnostics</h3>
+                    
+                    <!-- BMI Metric -->
+                    <div class="mb-6 bg-surface-container-low p-4 rounded border border-white/5">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Body Mass Index (BMI)</span>
+                            <span class="font-headline-md text-[18px] text-white" id="out-bmi">24.5</span>
+                        </div>
+                        <div class="flex justify-between items-center text-xs">
+                            <span class="font-body-md text-on-surface-variant opacity-80" id="out-bmi-status">Normal Range</span>
+                            <div class="flex gap-1.5 items-center">
+                                <span class="w-2 h-2 rounded-full inline-block" id="out-bmi-dot" style="background-color: var(--primary-fixed)"></span>
+                                <span class="font-label-sm text-[11px] uppercase tracking-wider text-primary-fixed" id="out-bmi-verdict">STEALTH</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Daily Caloric Target -->
+                    <div class="mb-6 bg-surface-container-low p-4 rounded border border-white/5 text-center">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant uppercase block mb-1">Daily Caloric Target</span>
+                        <div class="flex justify-center items-baseline gap-1.5">
+                            <span class="font-display-lg-mobile text-white leading-none tracking-tight" id="out-calories">2,654</span>
+                            <span class="font-headline-md text-primary-fixed uppercase italic text-sm">kcal / day</span>
+                        </div>
+                    </div>
+
+                    <!-- Macronutrient Targets -->
+                    <div class="space-y-4">
+                        <h4 class="font-label-lg text-label-lg text-white uppercase tracking-wider">Target Macro Blueprint</h4>
+                        
+                        <!-- Protein -->
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-body-md text-on-surface-variant">Protein (Muscle Repair)</span>
+                                <span class="font-label-lg text-white" id="out-protein">150g</span>
+                            </div>
+                            <div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+                                <div class="bg-primary-fixed h-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Carbohydrates -->
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-body-md text-on-surface-variant">Carbs (Explosive Energy)</span>
+                                <span class="font-label-lg text-white" id="out-carbs">300g</span>
+                            </div>
+                            <div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+                                <div class="bg-primary-fixed/60 h-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Fats -->
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-body-md text-on-surface-variant">Fats (Hormonal Balance)</span>
+                                <span class="font-label-lg text-white" id="out-fats">75g</span>
+                            </div>
+                            <div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+                                <div class="bg-primary-fixed/30 h-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-primary-fixed/5 border border-primary-fixed/15 rounded p-3 text-center text-xs font-body-md text-on-surface-variant">
+                    Diagnostic values calculated using advanced Mifflin-St Jeor athletic calibrations.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function calculateBiometrics() {
+        const height = parseFloat(document.getElementById('input-height').value);
+        const weight = parseFloat(document.getElementById('input-weight').value);
+        const age = parseFloat(document.getElementById('input-age').value);
+        const activity = parseFloat(document.getElementById('input-activity').value);
+        
+        // Retrieve selected goal
+        const goalRadio = document.querySelector('input[name="input-goal"]:checked');
+        const goal = goalRadio ? goalRadio.value : 'maintain';
+
+        // Update UI input indicators
+        document.getElementById('val-height').textContent = height;
+        document.getElementById('val-weight').textContent = weight;
+        document.getElementById('val-age').textContent = age;
+
+        // 1. BMI Calculation
+        const bmi = weight / ((height / 100) * (height / 100));
+        document.getElementById('out-bmi').textContent = bmi.toFixed(1);
+
+        let bmiStatus = 'Normal';
+        let bmiVerdict = 'STEALTH';
+        let bmiColor = 'var(--primary-fixed)';
+        
+        if (bmi < 18.5) {
+            bmiStatus = 'Underweight';
+            bmiVerdict = 'REBUILD';
+            bmiColor = '#38bdf8'; // Blue
+        } else if (bmi >= 25 && bmi < 30) {
+            bmiStatus = 'Overweight';
+            bmiVerdict = 'SHRED';
+            bmiColor = '#f59e0b'; // Amber
+        } else if (bmi >= 30) {
+            bmiStatus = 'Obese';
+            bmiVerdict = 'DANGER';
+            bmiColor = '#ef4444'; // Red
+        }
+
+        document.getElementById('out-bmi-status').textContent = `${bmiStatus} Range`;
+        const verdictLabel = document.getElementById('out-bmi-verdict');
+        verdictLabel.textContent = bmiVerdict;
+        verdictLabel.style.color = bmiColor;
+        document.getElementById('out-bmi-dot').style.backgroundColor = bmiColor;
+
+        // 2. TDEE Calculation (Mifflin-St Jeor Equation for Males as active baseline)
+        const bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+        let tdee = bmr * activity;
+
+        if (goal === 'cut') {
+            tdee -= 500;
+        } else if (goal === 'bulk') {
+            tdee += 500;
+        }
+
+        const calorieTarget = Math.round(tdee);
+        document.getElementById('out-calories').textContent = calorieTarget.toLocaleString();
+
+        // 3. Macronutrients split
+        let pPct = 0.3, cPct = 0.4, fPct = 0.3;
+        if (goal === 'cut') {
+            pPct = 0.35; cPct = 0.35; fPct = 0.3;
+        } else if (goal === 'bulk') {
+            pPct = 0.25; cPct = 0.55; fPct = 0.2;
+        }
+
+        const proteinG = Math.round((calorieTarget * pPct) / 4);
+        const carbsG = Math.round((calorieTarget * cPct) / 4);
+        const fatsG = Math.round((calorieTarget * fPct) / 9);
+
+        document.getElementById('out-protein').textContent = `${proteinG}g`;
+        document.getElementById('out-carbs').textContent = `${carbsG}g`;
+        document.getElementById('out-fats').textContent = `${fatsG}g`;
+
+        // Update progress bar percentages
+        const totalG = proteinG + carbsG + fatsG;
+        document.getElementById('out-protein').parentElement.nextElementSibling.firstElementChild.style.width = `${(proteinG / totalG) * 100}%`;
+        document.getElementById('out-carbs').parentElement.nextElementSibling.firstElementChild.style.width = `${(carbsG / totalG) * 100}%`;
+        document.getElementById('out-fats').parentElement.nextElementSibling.firstElementChild.style.width = `${(fatsG / totalG) * 100}%`;
+    }
+
+    // Auto trigger on load
+    document.addEventListener('DOMContentLoaded', () => {
+        calculateBiometrics();
+        
+        // Listen for dashboard biometrics sync
+        document.addEventListener('titanWeightLogged', (e) => {
+            const loggedWeight = e.detail.weight;
+            const weightSlider = document.getElementById('input-weight');
+            if (weightSlider) {
+                weightSlider.value = Math.round(loggedWeight);
+                calculateBiometrics();
+            }
+        });
+    });
+</script>
+
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between items-start md:items-center bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-white/10 relative z-20">
+    <div class="font-headline-lg text-headline-lg text-primary-fixed italic mb-8 md:mb-0 uppercase">TITAN CLUB</div>
+    <div class="flex flex-wrap gap-6 md:gap-8 mb-8 md:mb-0">
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Locations</a>
+    </div>
+    <div class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80">
+        © 2026 TITAN PERFORMANCE CLUB. ALL RIGHTS RESERVED.
+    </div>
+</footer>
+
+<!-- Global JS -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

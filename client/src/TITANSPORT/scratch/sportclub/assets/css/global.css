@@ -1,0 +1,170 @@
+/* Global Stylesheet - Titan Performance Club */
+
+:root {
+    --primary-fixed: #d2f000;
+    --primary-fixed-dim: #b8d300;
+    --on-primary-fixed: #191e00;
+    --primary-container: #d2f000;
+    --neon-glow-color: rgba(210, 240, 0, 0.35);
+    --neon-glow-hover-color: rgba(210, 240, 0, 0.6);
+    --neon-glow-weak: rgba(210, 240, 0, 0.15);
+}
+
+[data-theme="cyber"] {
+    --primary-fixed: #a855f7;
+    --primary-fixed-dim: #9333ea;
+    --on-primary-fixed: #ffffff;
+    --primary-container: #a855f7;
+    --neon-glow-color: rgba(168, 85, 247, 0.35);
+    --neon-glow-hover-color: rgba(168, 85, 247, 0.6);
+    --neon-glow-weak: rgba(168, 85, 247, 0.15);
+}
+
+[data-theme="inferno"] {
+    --primary-fixed: #ff5722;
+    --primary-fixed-dim: #ea580c;
+    --on-primary-fixed: #ffffff;
+    --primary-container: #ff5722;
+    --neon-glow-color: rgba(255, 87, 34, 0.35);
+    --neon-glow-hover-color: rgba(255, 87, 34, 0.6);
+    --neon-glow-weak: rgba(255, 87, 34, 0.15);
+}
+
+/* Selection Styling */
+::selection {
+    background-color: var(--primary-fixed);
+    color: var(--on-primary-fixed);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0c0f0f;
+}
+::-webkit-scrollbar-thumb {
+    background: #282a2b;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-fixed);
+}
+
+/* Base resets & animations */
+html {
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease;
+}
+
+/* Sheared & Skew styles */
+.clip-shear { 
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+}
+.clip-shear-inverse { 
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); 
+}
+.shear-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), 0 100%);
+}
+
+/* Premium Neon Glows */
+.neon-glow {
+    box-shadow: 0 0 25px var(--neon-glow-color);
+    transition: box-shadow 0.3s ease, transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.neon-glow:hover {
+    box-shadow: 0 0 35px var(--neon-glow-hover-color);
+}
+.neon-glow-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.neon-glow-hover:hover {
+    border-color: var(--primary-fixed);
+    box-shadow: 0 0 25px var(--neon-glow-weak);
+    transform: translateY(-4px);
+}
+
+/* Custom Modal/Dialog Styling */
+.modal-overlay {
+    background-color: rgba(12, 15, 15, 0.85);
+    backdrop-filter: blur(12px);
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    transform: scale(0.95);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal-active .modal-content {
+    transform: scale(1);
+}
+
+/* Smooth Category Filter Animations */
+.class-card {
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+}
+.class-card.filtered-out {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+}
+
+/* Floating Checkmark success animation */
+@keyframes checkmark-draw {
+    to { stroke-dashoffset: 0; }
+}
+@keyframes success-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+.checkmark-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: var(--primary-fixed);
+    fill: none;
+    animation: checkmark-draw 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.checkmark-check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    stroke: var(--primary-fixed);
+    stroke-width: 3;
+    animation: checkmark-draw 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+}
+.success-animate {
+    animation: success-pulse 0.4s ease-in-out 0.9s;
+}
+
+/* Slider Custom Styling */
+input[type="range"]::-webkit-slider-thumb {
+    background: var(--primary-fixed);
+    box-shadow: 0 0 10px var(--neon-glow-color);
+}
+input[type="range"]::-moz-range-thumb {
+    background: var(--primary-fixed);
+    box-shadow: 0 0 10px var(--neon-glow-color);
+}
+input[type="checkbox"]:checked {
+    background-color: var(--primary-fixed);
+    border-color: var(--primary-fixed);
+    color: var(--on-primary-fixed);
+}
+input[type="radio"]:checked {
+    background-color: var(--primary-fixed);
+    border-color: var(--primary-fixed);
+    color: var(--on-primary-fixed);
+}

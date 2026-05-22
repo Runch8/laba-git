@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TITAN PERFORMANCE CLUB</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Metropolis:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#e5e2e1",
+                      "on-secondary-container": "#bab8b7",
+                      "surface-container": "#1e2020",
+                      "surface": "#121414",
+                      "surface-container-high": "#282a2b",
+                      "on-secondary-fixed-variant": "#474646",
+                      "primary": "#ffffff",
+                      "tertiary-container": "#e5e2e1",
+                      "inverse-primary": "#576500",
+                      "secondary-fixed": "#e5e2e1",
+                      "inverse-surface": "#e2e2e2",
+                      "on-tertiary-fixed": "#1b1b1c",
+                      "on-tertiary": "#303030",
+                      "primary-container": "#d2f000",
+                      "on-surface": "#e2e2e2",
+                      "secondary": "#c8c6c5",
+                      "outline": "#909378",
+                      "primary-fixed": "#d2f000",
+                      "on-tertiary-container": "#656464",
+                      "surface-tint": "#b8d300",
+                      "on-secondary": "#313030",
+                      "primary-fixed-dim": "#b8d300",
+                      "inverse-on-surface": "#2f3131",
+                      "on-primary": "#2c3400",
+                      "surface-container-low": "#1a1c1c",
+                      "tertiary": "#ffffff",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "surface-container-highest": "#333535",
+                      "secondary-container": "#4a4949",
+                      "error": "#ffb4ab",
+                      "on-surface-variant": "#c6c9ab",
+                      "surface-bright": "#37393a",
+                      "on-error": "#690005",
+                      "outline-variant": "#454932",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-primary-fixed": "#191e00",
+                      "on-background": "#e2e2e2",
+                      "surface-container-lowest": "#0c0f0f",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "surface-variant": "#333535",
+                      "error-container": "#93000a",
+                      "on-primary-container": "#5d6b00",
+                      "surface-dim": "#121414",
+                      "on-primary-fixed-variant": "#414c00",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-error-container": "#ffdad6",
+                      "background": "#121414"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "section-gap": "120px",
+                      "base": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Metropolis"],
+                      "label-sm": ["Metropolis"],
+                      "display-lg-mobile": ["Anton"],
+                      "headline-md": ["Anton"],
+                      "headline-lg": ["Anton"],
+                      "display-lg": ["Anton"],
+                      "body-md": ["Metropolis"],
+                      "label-lg": ["Metropolis"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Kinetic specific styles */
+        .clip-shear { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+        .clip-shear-inverse { clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); }
+        .neon-glow { box-shadow: 0 0 25px rgba(210, 240, 0, 0.4); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg overflow-x-hidden antialiased">
+<!-- TopNavBar (From JSON) -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full bg-surface/90 backdrop-blur-md shadow-none transition-all duration-300" id="main-nav">
+<div class="font-headline-md text-headline-md font-bold text-primary-fixed dark:text-primary-fixed italic uppercase">TITAN CLUB</div>
+<div class="hidden md:flex items-center space-x-8">
+<!-- Active State: Home -->
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary-fixed border-b-2 border-primary-fixed pb-1 hover:text-primary-fixed transition-colors duration-300" href="#">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface dark:text-on-surface hover:text-primary-fixed transition-colors duration-300" href="#">Schedule</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface dark:text-on-surface hover:text-primary-fixed transition-colors duration-300" href="#">Coaches</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface dark:text-on-surface hover:text-primary-fixed transition-colors duration-300" href="#">Membership</a>
+</div>
+<button class="hidden md:block font-label-lg text-label-lg uppercase tracking-wider bg-primary-fixed text-on-primary-fixed px-6 py-2 rounded scale-95 active:scale-90 transition-transform neon-glow">JOIN NOW</button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary-fixed">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[921px] flex items-center px-margin-mobile md:px-margin-desktop pt-24 overflow-hidden bg-surface">
+<!-- Sheared Background Image -->
+<div class="absolute inset-0 bg-cover bg-center transform -skew-y-3 scale-110 origin-bottom-right opacity-60" data-alt="A highly cinematic, high-contrast wide shot of an elite male athlete in mid-air performing an explosive box jump in a dark, industrial performance center. The lighting is dramatic, featuring deep charcoal shadows punctuated by intense, electric lime green accent lights that catch the sweat on his muscles. The mood is raw, kinetic, and intensely focused, perfectly capturing a premium late-night fitness aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4EKNPDw2aicILFHBVQ4JPd3b0f28NYMiFcIxOcNFVZrEuoS9U30ID9zH4XSTlRk0nc45_qP-XpfoWEViFJOnnDbALBHWfyP1FLjPBgDo2aVuvlT9IMPlfsTHYHhVA04KSsV7XTFiq3rCRmolrFWq82ceSPCQOWBkjdJPwp7Fmaye6o_JeimjyLVIo0K37Y_O34s6lSuZqkw7nYUtbiqIZ1denlcHR9CSVwoq6MZEE-O72o5Ws6rQ5xDmgAdZMt1lCQo9zXICdr9Ux');">
+</div>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start mt-12 md:mt-0">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary uppercase italic tracking-tight mb-6 max-w-3xl leading-none drop-shadow-xl transform -skew-x-3">
+                PUSH YOUR <span class="text-primary-fixed">LIMITS</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10 border-l-4 border-primary-fixed pl-4">
+                Elite performance training in a high-voltage environment. Join the absolute pinnacle of fitness engineering.
+            </p>
+<button class="bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md uppercase px-10 py-3 transform -skew-x-6 hover:scale-105 transition-all neon-glow flex items-center gap-2">
+                START TRAINING <span class="material-symbols-outlined text-[32px]">arrow_forward</span>
+</button>
+</div>
+</header>
+<!-- Features Section (Bento Grid Style) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-background relative z-20">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Feature 1 -->
+<div class="bg-surface-container border border-white/5 rounded p-8 hover:border-primary-fixed/50 transition-colors duration-300 group">
+<div class="w-16 h-16 rounded bg-surface-container-high flex items-center justify-center mb-6 text-primary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-3">Modern Equipment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">State-of-the-art biomechanical engineering. Only the heaviest, most precise tools for absolute gains.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container border border-white/5 rounded p-8 hover:border-primary-fixed/50 transition-colors duration-300 group relative overflow-hidden">
+<!-- Subtle glow effect inside card -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-fixed/10 blur-2xl rounded-full"></div>
+<div class="w-16 h-16 rounded bg-surface-container-high flex items-center justify-center mb-6 text-primary-fixed group-hover:scale-110 transition-transform relative z-10">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">sports_kabaddi</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-3 relative z-10">Expert Coaches</h3>
+<p class="font-body-md text-body-md text-on-surface-variant relative z-10">Veteran athletes and certified biomechanics specialists dedicated to pushing you past the breaking point.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container border border-white/5 rounded p-8 hover:border-primary-fixed/50 transition-colors duration-300 group">
+<div class="w-16 h-16 rounded bg-surface-container-high flex items-center justify-center mb-6 text-primary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">calendar_clock</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-3">Flexible Schedule</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Late-night access and comprehensive class schedules designed around the life of a dedicated performer.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer (From JSON) -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between items-start md:items-center bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-white/10 relative z-20">
+<div class="font-headline-lg text-headline-lg text-primary-fixed italic mb-8 md:mb-0 uppercase">TITAN CLUB</div>
+<div class="flex flex-wrap gap-6 md:gap-8 mb-8 md:mb-0">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Locations</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80">
+            © 2024 TITAN PERFORMANCE CLUB. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+<script>
+        // Simple script to add background to nav on scroll for better contrast
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'border-b', 'border-white/5');
+            } else {
+                nav.classList.remove('shadow-lg', 'border-b', 'border-white/5');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meet Our Experts - TITAN PERFORMANCE CLUB</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Anton & Metropolis (approximated with standard sans for fallback if Metropolis isn't loaded via typical CDN, assuming it's available or fallback is fine for structure) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-container": "#1e2020",
+                        "surface": "#121414",
+                        "surface-container-high": "#282a2b",
+                        "on-secondary-fixed-variant": "#474646",
+                        "primary": "#ffffff",
+                        "tertiary-container": "#e5e2e1",
+                        "inverse-primary": "#576500",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-surface": "#e2e2e2",
+                        "on-tertiary-fixed": "#1b1b1c",
+                        "on-tertiary": "#303030",
+                        "primary-container": "#d2f000",
+                        "on-surface": "#e2e2e2",
+                        "secondary": "#c8c6c5",
+                        "outline": "#909378",
+                        "primary-fixed": "#d2f000",
+                        "on-tertiary-container": "#656464",
+                        "surface-tint": "#b8d300",
+                        "on-secondary": "#313030",
+                        "primary-fixed-dim": "#b8d300",
+                        "inverse-on-surface": "#2f3131",
+                        "on-primary": "#2c3400",
+                        "surface-container-low": "#1a1c1c",
+                        "tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-container-highest": "#333535",
+                        "secondary-container": "#4a4949",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#c6c9ab",
+                        "surface-bright": "#37393a",
+                        "on-error": "#690005",
+                        "outline-variant": "#454932",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary-fixed": "#191e00",
+                        "on-background": "#e2e2e2",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-variant": "#333535",
+                        "error-container": "#93000a",
+                        "on-primary-container": "#5d6b00",
+                        "surface-dim": "#121414",
+                        "on-primary-fixed-variant": "#414c00",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-error-container": "#ffdad6",
+                        "background": "#121414"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter", "sans-serif"],
+                        "label-sm": ["Inter", "sans-serif"],
+                        "display-lg-mobile": ["Anton", "sans-serif"],
+                        "headline-md": ["Anton", "sans-serif"],
+                        "headline-lg": ["Anton", "sans-serif"],
+                        "display-lg": ["Anton", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "label-lg": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .shear-bottom {
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), 0 100%);
+        }
+        .neon-glow-hover:hover {
+            box-shadow: 0 0 24px rgba(210, 240, 0, 0.4);
+        }
+        /* Material symbols specific override if needed */
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar JSON Render -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-full bg-surface/90 backdrop-blur-md shadow-none transition-all">
+<div class="font-headline-md text-headline-md font-bold text-primary-fixed dark:text-primary-fixed italic">
+            TITAN CLUB
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface dark:text-on-surface hover:text-primary-fixed transition-colors duration-300" href="#">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface dark:text-on-surface hover:text-primary-fixed transition-colors duration-300" href="#">Schedule</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary-fixed border-b-2 border-primary-fixed pb-1 hover:text-primary-fixed transition-colors duration-300" href="#">Coaches</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface dark:text-on-surface hover:text-primary-fixed transition-colors duration-300" href="#">Membership</a>
+</div>
+<button class="hidden md:block bg-primary-fixed text-on-primary font-headline-md text-headline-md uppercase px-6 py-2 scale-95 active:scale-90 transition-transform">
+            JOIN NOW
+        </button>
+<!-- Mobile Menu Icon (Placeholder for functionality) -->
+<button class="md:hidden text-primary-fixed">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px] pb-section-gap px-margin-mobile md:px-margin-desktop relative">
+<!-- Header Section -->
+<header class="mb-16 relative z-10">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg uppercase text-primary-fixed mb-4">
+                MEET OUR EXPERTS
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                The elite minds behind your transformation. Our coaching staff brings decades of professional sports and high-performance training experience directly to you.
+            </p>
+</header>
+<!-- Team Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter relative z-10">
+<!-- Coach Card 1 -->
+<article class="group relative bg-surface-container border border-white/10 flex flex-col transition-all duration-300 neon-glow-hover rounded-none overflow-hidden">
+<div class="relative h-80 w-full overflow-hidden shear-bottom bg-surface-container-highest">
+<img alt="Coach Portrait" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" data-alt="A striking high-contrast black and white professional portrait of a heavily muscled male strength coach in a dark, atmospheric premium gym setting. He is looking intensely at the camera, wearing a dark athletic tank top. The lighting is dramatic and moody, emphasizing muscular definition, with subtle Electric Lime neon accents reflecting off the background equipment. The aesthetic is high-energy, exclusive, and raw." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRGD0Ci7bn5Z_wWQPqQdBvrUFjdtyARyX3EQmtaeQDz6tJDefWpGAy7Nu-isMh583r5BIO51JDZ7qMyxLUd4VcOcsoJy7StLl6sjaj-Xvm8LncDNcATwuPguHjUTcMkks0b14nSEDrq1hHKsO01CF-qufbdsWRS_1_CA29SG6no2-FI-xXSNkDrFuOp6oiQ_JMA61C8esSN_S4oNMd-93D-xlBaGPHuqfVzX3fb9vf-8enP4OIQeBEyRrusw9rwuCEnBGbViBf4zaI"/>
+<!-- Social Overlay on Hover -->
+<div class="absolute inset-0 bg-surface/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+</a>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">Jax 'The Titan' Miller</h3>
+<p class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider mb-4">Head Strength Coach</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Former collegiate powerlifting champion specializing in raw strength and explosive power output. Jax builds the foundation for elite athletic performance.
+                    </p>
+</div>
+</article>
+<!-- Coach Card 2 -->
+<article class="group relative bg-surface-container border border-white/10 flex flex-col transition-all duration-300 neon-glow-hover rounded-none overflow-hidden">
+<div class="relative h-80 w-full overflow-hidden shear-bottom bg-surface-container-highest">
+<img alt="Coach Portrait" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" data-alt="A striking high-contrast black and white professional portrait of a focused female conditioning coach in a dark, atmospheric premium training facility. She stands confidently with arms crossed, wearing sleek dark activewear. The lighting is dramatic, casting deep shadows that convey intensity and focus, with subtle Electric Lime neon rim lighting outlining her silhouette. The aesthetic is elite, powerful, and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYjflyckHGyBXXdV5U3tvKxDDQtuRWgv1mzSNacCEfyT_TtaUTEvdTyuVbDL_aIMnEo5h-ktjoBlYJcv5vlsGtkhlurfOyggC5zAjsJ7qRf9CUAdF_-gyDyrJwWQGIMLm3blaN1tKQVOxgExm2WTbixSc80fNu1ng6eH5GL7cJ8-fX6Ao3CYEKEHq0ZJd3V81t9qOoFdVctM1Hpdx5pRJgw4jBSb8qTxgM8bH6TOR59DtbyEEe2e64O7h26wPNkbjhMTbirIOXamDl"/>
+<div class="absolute inset-0 bg-surface/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">Elena Rostova</h3>
+<p class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider mb-4">Metabolic Conditioning</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Master of high-intensity functional training. Elena's programs are designed to push cardiovascular thresholds and forge unbreakable mental toughness.
+                    </p>
+</div>
+</article>
+<!-- Coach Card 3 -->
+<article class="group relative bg-surface-container border border-white/10 flex flex-col transition-all duration-300 neon-glow-hover rounded-none overflow-hidden">
+<div class="relative h-80 w-full overflow-hidden shear-bottom bg-surface-container-highest">
+<img alt="Coach Portrait" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" data-alt="A striking high-contrast black and white professional portrait of an athletic male mobility specialist in a dark, minimalist performance center. He is captured mid-movement, demonstrating technical precision, wearing dark performance gear. The lighting is high-key directional, creating a sense of dynamic motion against a pitch-black background, accented by faint Electric Lime geometrical overlays. The aesthetic is technical, sharp, and focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWyDKwHXwqVyqyLCc3okd8_f1OY-VckbV6EXcFxtlaSgbjvT6niLRX3d_mCxTxjXZ81SNXB3Y0GEqbSdd_LGsCNic9uUwrLkZabV6_i6Ok020GauWPUoaL1jPIWXZQXbUYij-YtAOlL9gm6Y3szrDaa4oOMtpFpHlHbog0N-oJftnl0lpjeS-mTZipIiVReJteWinrxWmTHzQvAVtTwUOh8AX9cqZwihTjwsZ4-mYh10DFOjtdCVVlQqVvRB-aAbzrm7Su5f99l83M"/>
+<div class="absolute inset-0 bg-surface/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+</a>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">Marcus Thorne</h3>
+<p class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider mb-4">Mobility &amp; Recovery</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Ensuring our athletes stay injury-free. Marcus utilizes advanced biomechanics to optimize joint health, flexibility, and post-training regeneration.
+                    </p>
+</div>
+</article>
+<!-- Coach Card 4 -->
+<article class="group relative bg-surface-container border border-white/10 flex flex-col transition-all duration-300 neon-glow-hover rounded-none overflow-hidden">
+<div class="relative h-80 w-full overflow-hidden shear-bottom bg-surface-container-highest">
+<img alt="Coach Portrait" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" data-alt="A striking high-contrast black and white professional portrait of a rugged male boxing coach in a dark, gritty fighting gym environment. He stands with taped hands resting on his hips, wearing a sleeveless dark hoodie. The lighting is raw and overhead, emphasizing texture and determination, surrounded by deep shadows with piercing Electric Lime accents in the background details. The aesthetic is intense, combative, and raw." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE2xfHNC3VQf4kQODgS2pVVh-pbvcBhpYJUaLAWcDnp57GKAiCiTYhLCmEGUqIE5dsk8ltl-cSx98TYpOTNNUmBxcAfA6XcKiTUC8S9npU-gaG_MxoR-Kjkz_OmWuK1WWHqm8p0O7dsTKiDBBvh3oJ7g6BpuPX0WUa9y2dzTr_ayAM_u7B_EB5iQ4I_PoX3qRgRHyBoWSQvcX0DgQxXwmwHdF8eAF-u_3k7Yi9VO3Ei2H9Jm6VWvW2NmC5FzM8Zp5CsWpC2gLuhPlg"/>
+<div class="absolute inset-0 bg-surface/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">David 'Iron' Silva</h3>
+<p class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider mb-4">Combat &amp; Striking</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Veteran striking coach with international competitive experience. David sharpens reflexes, striking mechanics, and tactical combat awareness.
+                    </p>
+</div>
+</article>
+<!-- Coach Card 5 -->
+<article class="group relative bg-surface-container border border-white/10 flex flex-col transition-all duration-300 neon-glow-hover rounded-none overflow-hidden">
+<div class="relative h-80 w-full overflow-hidden shear-bottom bg-surface-container-highest">
+<img alt="Coach Portrait" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" data-alt="A striking high-contrast black and white professional portrait of a confident female endurance coach in a sleek, minimalist dark mode studio. She is looking slightly off-camera with a determined expression, wearing high-performance dark apparel. The lighting is cinematic and cool, isolating her against an abyssal black background with vibrant Electric Lime highlights reflecting on her face. The aesthetic is premium, focused, and forward-moving." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2l9YeNrSXasYYCapD8ZoSdC6-WUSXV4Na5c-9R08FAkVPiCW_VfsKc7yhXJ4g7em_sls2W_Um2MlQxWDwy5bAeYP6VRKho6Tjne3n0dke8LbwHStVx0Enl7DzlQ2wbO1ySryDWkDsDK8JXBAe50n0toizC1jRXM_eCOAfDjyodrs-8qhUMYK-3L2jdHNOWLzRc_LpaXdEUcc4bJhAFjppPGzpbECf1mVleDCTtMTUk2BjiWV0muxsMIJbn2hrAOKyEh__y7ZHjyis"/>
+<div class="absolute inset-0 bg-surface/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+</a>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">Sarah Jenkins</h3>
+<p class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider mb-4">Endurance &amp; Stamina</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        Triathlon specialist focused on sustained energy systems and pacing. Sarah's analytical approach guarantees measurable improvements in long-duration performance.
+                    </p>
+</div>
+</article>
+<!-- Coach Card 6 -->
+<article class="group relative bg-surface-container border border-white/10 flex flex-col transition-all duration-300 neon-glow-hover rounded-none overflow-hidden">
+<div class="relative h-80 w-full overflow-hidden shear-bottom bg-surface-container-highest">
+<img alt="Coach Portrait" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" data-alt="A striking high-contrast black and white professional portrait of a calm, imposing male sports psychologist/coach in a sophisticated dark VIP lounge area of a performance center. He is seated slightly, looking directly into the lens, wearing a dark fitted tactical shirt. The lighting is understated but powerful, utilizing deep blacks and subtle Electric Lime ambient glows to convey authority and mental discipline. The aesthetic is elite, intellectual, and commanding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWs9u2gGYjeQSoypihS7sYtpg9UNZggsze60cejG4iT8BgQbSY4h30COGTToF9t8HrGoRIU8OBXppJvOnMGRC1oeK7ktyESDXZst2QnJVsUhdoge14feHAWPxZPtsJSKrUhBrZ5KmsmVep_ucv0W-7i6-uqUVADyynwlo5YAFJtgQZ0ntZeonR4IBqHQ8Y9iprPW5RLTIoyGEdhJ8JEqCWnH3gmpQzDF51tcIbNdPjQwNt7L1zGNWHgDLM55txOhS2QHLtqUDODln0"/>
+<div class="absolute inset-0 bg-surface/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="w-12 h-12 bg-transparent border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">Dr. Vance Reed</h3>
+<p class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider mb-4">Performance Psychology</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                        The mind controls the machine. Dr. Reed integrates cognitive conditioning techniques used by tier-one operators to ensure peak performance under pressure.
+                    </p>
+</div>
+</article>
+</section>
+<!-- Ambient Background Element -->
+<div class="fixed top-1/4 right-0 w-96 h-96 bg-primary-fixed/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+</main>
+<!-- Footer JSON Render -->
+<footer class="w-full px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between bg-surface-container-lowest border-t border-white/10 mt-auto">
+<div class="flex flex-col gap-4 mb-8 md:mb-0">
+<div class="font-headline-lg text-headline-lg text-primary-fixed italic">
+                TITAN CLUB
+            </div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">
+                © 2024 TITAN PERFORMANCE CLUB. ALL RIGHTS RESERVED.
+            </p>
+</div>
+<div class="flex flex-wrap gap-6 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Locations</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Class Schedule | TITAN PERFORMANCE CLUB</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Metropolis:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-container": "#1e2020",
+                        "surface": "#121414",
+                        "surface-container-high": "#282a2b",
+                        "on-secondary-fixed-variant": "#474646",
+                        "primary": "#ffffff",
+                        "tertiary-container": "#e5e2e1",
+                        "inverse-primary": "#576500",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-surface": "#e2e2e2",
+                        "on-tertiary-fixed": "#1b1b1c",
+                        "on-tertiary": "#303030",
+                        "primary-container": "var(--primary-container)",
+                        "on-surface": "#e2e2e2",
+                        "secondary": "#c8c6c5",
+                        "outline": "#909378",
+                        "primary-fixed": "var(--primary-fixed)",
+                        "on-tertiary-container": "#656464",
+                        "surface-tint": "var(--primary-fixed-dim)",
+                        "on-secondary": "#313030",
+                        "primary-fixed-dim": "var(--primary-fixed-dim)",
+                        "inverse-on-surface": "#2f3131",
+                        "on-primary": "#2c3400",
+                        "surface-container-low": "#1a1c1c",
+                        "tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-container-highest": "#333535",
+                        "secondary-container": "#4a4949",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#c6c9ab",
+                        "surface-bright": "#37393a",
+                        "on-error": "#690005",
+                        "outline-variant": "#454932",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary-fixed": "var(--on-primary-fixed)",
+                        "on-background": "#e2e2e2",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-variant": "#333535",
+                        "error-container": "#93000a",
+                        "on-primary-container": "#5d6b00",
+                        "surface-dim": "#121414",
+                        "on-primary-fixed-variant": "#414c00",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-error-container": "#ffdad6",
+                        "background": "#121414"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Metropolis"],
+                        "label-sm": ["Metropolis"],
+                        "display-lg-mobile": ["Anton"],
+                        "headline-md": ["Anton"],
+                        "headline-lg": ["Anton"],
+                        "display-lg": ["Anton"],
+                        "body-md": ["Metropolis"],
+                        "label-lg": ["Metropolis"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Global CSS -->
+    <link href="assets/css/global.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full bg-surface/90 backdrop-blur-md transition-all duration-300" id="topNav">
+    <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary-fixed dark:text-primary-fixed italic uppercase">TITAN CLUB</a>
+    <div class="hidden md:flex items-center gap-6">
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="index.html">Home</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="schedule.html">Schedule</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="coaches.html">Coaches</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="membership.html">Membership</a>
+    </div>
+    <button class="hidden md:block bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md px-6 py-2 uppercase neon-glow hover:bg-surface-tint transition-colors">JOIN NOW</button>
+    <!-- Mobile Menu Icon -->
+    <button class="md:hidden text-primary-fixed">
+        <span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+    </button>
+</nav>
+
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+    <!-- Ambient Background Glow -->
+    <div class="absolute top-0 right-0 w-1/2 h-[500px] bg-primary-fixed/5 rounded-full blur-[120px] pointer-events-none"></div>
+    
+    <!-- Header -->
+    <div class="mb-12 relative z-10">
+        <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary uppercase italic mb-4">CLASS <span class="text-primary-fixed">SCHEDULE</span></h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Push your limits. Secure your spot in our elite training sessions. The grind never stops.</p>
+    </div>
+    
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-4 mb-12 relative z-10" id="filter-buttons">
+        <button data-filter="all" class="filter-btn bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md px-6 py-2 uppercase neon-glow transition-all">All</button>
+        <button data-filter="gym" class="filter-btn bg-transparent text-primary font-headline-md text-headline-md px-6 py-2 border-2 border-primary uppercase hover:border-primary-fixed hover:text-primary-fixed transition-colors">Gym</button>
+        <button data-filter="crossfit" class="filter-btn bg-transparent text-primary font-headline-md text-headline-md px-6 py-2 border-2 border-primary uppercase hover:border-primary-fixed hover:text-primary-fixed transition-colors">CrossFit</button>
+        <button data-filter="yoga" class="filter-btn bg-transparent text-primary font-headline-md text-headline-md px-6 py-2 border-2 border-primary uppercase hover:border-primary-fixed hover:text-primary-fixed transition-colors">Yoga</button>
+        <button data-filter="boxing" class="filter-btn bg-transparent text-primary font-headline-md text-headline-md px-6 py-2 border-2 border-primary uppercase hover:border-primary-fixed hover:text-primary-fixed transition-colors">Boxing</button>
+    </div>
+    
+    <!-- Schedule Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative z-10" id="schedule-grid">
+        <!-- Day Column: Monday -->
+        <div class="day-column flex flex-col gap-4" data-day="monday">
+            <h2 class="font-headline-lg text-headline-lg text-primary border-b border-white/10 pb-2 mb-2">MONDAY</h2>
+            
+            <!-- Class Card: CrossFit -->
+            <div class="class-card bg-surface-container border border-white/10 p-6 rounded-DEFAULT relative overflow-hidden group hover:border-primary-fixed/50 transition-colors" data-id="crossfit_mon_08" data-category="crossfit" data-title="TITAN CROSSFIT" data-time="08:00 - 09:30" data-coach="Coach Jax">
+                <div class="badge absolute top-0 right-0 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-3 py-1 uppercase rounded-bl-DEFAULT">Live</div>
+                <p class="font-label-lg text-label-lg text-primary-fixed mb-1">08:00 - 09:30</p>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">TITAN CROSSFIT</h3>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-on-surface-variant text-sm">person</span>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Coach Jax</p>
+                </div>
+                <button class="book-btn w-full bg-transparent border-2 border-white/20 text-primary font-headline-md text-headline-md py-2 uppercase group-hover:border-primary-fixed group-hover:text-primary-fixed group-hover:neon-glow transition-all">BOOK</button>
+            </div>
+            
+            <!-- Class Card: Power Lifting -->
+            <div class="class-card bg-surface-container border border-white/10 p-6 rounded-DEFAULT relative overflow-hidden group hover:border-primary-fixed/50 transition-colors" data-id="lifting_mon_12" data-category="gym" data-title="POWER LIFTING" data-time="12:00 - 13:00" data-coach="Coach Marcus">
+                <div class="badge absolute top-0 right-0 bg-error text-on-error font-label-sm text-label-sm px-3 py-1 uppercase rounded-bl-DEFAULT">Full</div>
+                <p class="font-label-lg text-label-lg text-primary-fixed mb-1">12:00 - 13:00</p>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">POWER LIFTING</h3>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-on-surface-variant text-sm">person</span>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Coach Marcus</p>
+                </div>
+                <button class="waitlist-btn w-full bg-surface-container-high text-on-surface-variant hover:text-white hover:bg-red-500/20 hover:border-red-500/50 border border-transparent font-headline-md text-headline-md py-2 uppercase transition-all">WAITLIST</button>
+            </div>
+        </div>
+        
+        <!-- Day Column: Tuesday -->
+        <div class="day-column flex flex-col gap-4" data-day="tuesday">
+            <h2 class="font-headline-lg text-headline-lg text-primary border-b border-white/10 pb-2 mb-2">TUESDAY</h2>
+            
+            <!-- Class Card: HIIT -->
+            <div class="class-card bg-surface-container border border-white/10 p-6 rounded-DEFAULT relative overflow-hidden group hover:border-primary-fixed/50 transition-colors" data-id="hiit_tue_07" data-category="gym" data-title="HIIT BURN" data-time="07:00 - 08:00" data-coach="Coach Sarah">
+                <p class="font-label-lg text-label-lg text-primary-fixed mb-1">07:00 - 08:00</p>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">HIIT BURN</h3>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-on-surface-variant text-sm">person</span>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Coach Sarah</p>
+                </div>
+                <button class="book-btn w-full bg-transparent border-2 border-white/20 text-primary font-headline-md text-headline-md py-2 uppercase group-hover:border-primary-fixed group-hover:text-primary-fixed group-hover:neon-glow transition-all">BOOK</button>
+            </div>
+            
+            <!-- Class Card: Boxing -->
+            <div class="class-card bg-surface-container border border-white/10 p-6 rounded-DEFAULT relative overflow-hidden group hover:border-primary-fixed/50 transition-colors" data-id="boxing_tue_18" data-category="boxing" data-title="ELITE BOXING" data-time="18:00 - 19:30" data-coach="Coach Tyson">
+                <p class="font-label-lg text-label-lg text-primary-fixed mb-1">18:00 - 19:30</p>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">ELITE BOXING</h3>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-on-surface-variant text-sm">person</span>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Coach Tyson</p>
+                </div>
+                <button class="book-btn w-full bg-transparent border-2 border-white/20 text-primary font-headline-md text-headline-md py-2 uppercase group-hover:border-primary-fixed group-hover:text-primary-fixed group-hover:neon-glow transition-all">BOOK</button>
+            </div>
+        </div>
+        
+        <!-- Day Column: Wednesday -->
+        <div class="day-column flex flex-col gap-4" data-day="wednesday">
+            <h2 class="font-headline-lg text-headline-lg text-primary border-b border-white/10 pb-2 mb-2">WEDNESDAY</h2>
+            
+            <!-- Class Card: Mobility Flow -->
+            <div class="class-card bg-surface-container border border-white/10 p-6 rounded-DEFAULT relative overflow-hidden group hover:border-primary-fixed/50 transition-colors" data-id="mobility_wed_09" data-category="yoga" data-title="MOBILITY FLOW" data-time="09:00 - 10:00" data-coach="Coach Elena">
+                <div class="badge absolute top-0 right-0 bg-surface-bright text-primary font-label-sm text-label-sm px-3 py-1 uppercase rounded-bl-DEFAULT">New</div>
+                <p class="font-label-lg text-label-lg text-primary-fixed mb-1">09:00 - 10:00</p>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">MOBILITY FLOW</h3>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-on-surface-variant text-sm">person</span>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Coach Elena</p>
+                </div>
+                <button class="book-btn w-full bg-transparent border-2 border-white/20 text-primary font-headline-md text-headline-md py-2 uppercase group-hover:border-primary-fixed group-hover:text-primary-fixed group-hover:neon-glow transition-all">BOOK</button>
+            </div>
+        </div>
+        
+        <!-- Day Column: Thursday -->
+        <div class="day-column flex flex-col gap-4" data-day="thursday">
+            <h2 class="font-headline-lg text-headline-lg text-primary border-b border-white/10 pb-2 mb-2">THURSDAY</h2>
+            
+            <!-- Class Card: Dawn Patrol -->
+            <div class="class-card bg-surface-container border border-white/10 p-6 rounded-DEFAULT relative overflow-hidden group hover:border-primary-fixed/50 transition-colors" data-id="dawn_thu_06" data-category="gym" data-title="DAWN PATROL" data-time="06:00 - 07:30" data-coach="Coach Jax">
+                <p class="font-label-lg text-label-lg text-primary-fixed mb-1">06:00 - 07:30</p>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">DAWN PATROL</h3>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-on-surface-variant text-sm">person</span>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Coach Jax</p>
+                </div>
+                <button class="book-btn w-full bg-transparent border-2 border-white/20 text-primary font-headline-md text-headline-md py-2 uppercase group-hover:border-primary-fixed group-hover:text-primary-fixed group-hover:neon-glow transition-all">BOOK</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-8 text-center md:hidden relative z-10">
+        <button class="bg-transparent border border-white/20 text-on-surface-variant px-6 py-2 text-sm uppercase tracking-wider hover:text-primary transition-colors">View Full Week</button>
+    </div>
+</main>
+
+<!-- Interactive Booking Modal -->
+<div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+    <div class="absolute inset-0 bg-background/80 backdrop-blur-md"></div>
+    <div class="modal-content relative z-10 w-full max-w-md bg-surface-container border border-white/10 p-8 rounded-lg shadow-2xl transition-all duration-300">
+        <!-- Close Button -->
+        <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary-fixed transition-colors">
+            <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+        
+        <!-- Modal Headers -->
+        <div id="booking-form-header">
+            <span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest block mb-1" id="modal-class-time">08:00 - 09:30</span>
+            <h3 class="font-headline-lg text-headline-lg uppercase italic text-white mb-2" id="modal-class-title">TITAN CROSSFIT</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" id="modal-class-coach">with Coach Jax</p>
+        </div>
+
+        <div id="booking-success-header" class="hidden text-center py-6">
+            <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-full bg-primary-fixed/10 success-animate">
+                <svg class="w-12 h-12" viewBox="0 0 52 52">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            <h3 class="font-headline-lg text-headline-lg uppercase italic text-primary-fixed mb-2">RESERVATION CONFIRMED!</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xs mx-auto">Your spot is secured. Prepare your mind and body for the grind.</p>
+        </div>
+
+        <!-- Booking Form -->
+        <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+            <input type="hidden" id="modal-class-id">
+            <input type="hidden" id="modal-booking-type" value="book">
+            
+            <div class="space-y-6">
+                <div>
+                    <label for="user-name" class="font-label-lg text-label-lg text-white uppercase block mb-2">Full Name</label>
+                    <input type="text" id="user-name" required placeholder="John Doe" class="w-full bg-surface-container-low text-white placeholder-on-surface-variant/40 border-b border-t-0 border-l-0 border-r-0 border-white/20 focus:border-primary-fixed focus:ring-0 px-0 py-3 transition-colors text-body-md">
+                </div>
+                <div>
+                    <label for="user-email" class="font-label-lg text-label-lg text-white uppercase block mb-2">Email Address</label>
+                    <input type="email" id="user-email" required placeholder="john@example.com" class="w-full bg-surface-container-low text-white placeholder-on-surface-variant/40 border-b border-t-0 border-l-0 border-r-0 border-white/20 focus:border-primary-fixed focus:ring-0 px-0 py-3 transition-colors text-body-md">
+                </div>
+            </div>
+            <button type="submit" id="booking-submit-btn" class="w-full mt-8 bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md uppercase py-3 rounded neon-glow tracking-wider flex items-center justify-center gap-2">
+                <span>CONFIRM BOOKING</span>
+            </button>
+        </form>
+
+        <!-- Close Action (Visible only after success) -->
+        <button id="success-close-btn" onclick="closeBookingModal()" class="hidden w-full mt-6 bg-transparent border-2 border-white/20 hover:border-primary-fixed hover:text-primary-fixed font-headline-md text-headline-md uppercase py-3 rounded transition-colors">
+            CLOSE WINDOW
+        </button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between bg-surface-container-lowest border-t border-white/10 mt-auto">
+    <div class="mb-8 md:mb-0">
+        <span class="font-headline-lg text-headline-lg text-primary-fixed italic block mb-4">TITAN CLUB</span>
+        <p class="font-body-md text-body-md text-on-surface-variant">© 2026 TITAN PERFORMANCE CLUB. ALL RIGHTS RESERVED.</p>
+    </div>
+    <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+        <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Locations</a>
+    </div>
+</footer>
+
+<!-- Global JS -->
+<script src="assets/js/main.js"></script>
+
+<!-- Local script for schedule mechanics -->
+<script>
+    // 1. Dynamic Filtering Logic
+    const filterButtons = document.querySelectorAll('#filter-buttons button');
+    const classCards = document.querySelectorAll('.class-card');
+    const dayColumns = document.querySelectorAll('.day-column');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active style from all buttons
+            filterButtons.forEach(b => {
+                b.className = 'filter-btn bg-transparent text-primary font-headline-md text-headline-md px-6 py-2 border-2 border-primary uppercase hover:border-primary-fixed hover:text-primary-fixed transition-colors';
+            });
+            
+            // Set active style for clicked button
+            btn.className = 'filter-btn bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md px-6 py-2 uppercase neon-glow transition-all';
+            
+            const filterValue = btn.getAttribute('data-filter');
+            
+            classCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                
+                if (filterValue === 'all' || category === filterValue) {
+                    card.classList.remove('filtered-out');
+                } else {
+                    card.classList.add('filtered-out');
+                }
+            });
+
+            // Adjust day column visibility if all cards inside are filtered out
+            dayColumns.forEach(col => {
+                const visibleCards = col.querySelectorAll('.class-card:not(.filtered-out)');
+                if (visibleCards.length === 0) {
+                    col.classList.add('hidden');
+                } else {
+                    col.classList.remove('hidden');
+                }
+            });
+        });
+    });
+
+    // 2. Booking Mechanics
+    const bookingModal = document.getElementById('booking-modal');
+    
+    // Check local storage for pre-existing bookings
+    document.addEventListener('DOMContentLoaded', () => {
+        const bookings = JSON.parse(localStorage.getItem('titan_bookings') || '{}');
+        Object.keys(bookings).forEach(classId => {
+            const card = document.querySelector(`.class-card[data-id="${classId}"]`);
+            if (card) {
+                if (bookings[classId].type === 'waitlist') {
+                    setCardToWaitlistJoined(card);
+                } else {
+                    setCardToBooked(card);
+                }
+            }
+        });
+    });
+
+    // Add listeners to book and waitlist buttons
+    document.querySelectorAll('.book-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.class-card');
+            openBookingFlow(card, 'book');
+        });
+    });
+
+    document.querySelectorAll('.waitlist-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.class-card');
+            if (btn.textContent.trim() === 'WAITLIST') {
+                openBookingFlow(card, 'waitlist');
+            }
+        });
+    });
+
+    function openBookingFlow(card, type) {
+        const classId = card.getAttribute('data-id');
+        const title = card.getAttribute('data-title');
+        const time = card.getAttribute('data-time');
+        const coach = card.getAttribute('data-coach');
+        
+        document.getElementById('modal-class-id').value = classId;
+        document.getElementById('modal-class-title').textContent = title;
+        document.getElementById('modal-class-time').textContent = time;
+        document.getElementById('modal-class-coach').textContent = `with ${coach}`;
+        document.getElementById('modal-booking-type').value = type;
+
+        const submitBtn = document.getElementById('booking-submit-btn');
+        if (type === 'waitlist') {
+            submitBtn.textContent = 'CONFIRM WAITLIST';
+            document.getElementById('booking-success-header').querySelector('h3').textContent = 'WAITLIST JOINED!';
+            document.getElementById('booking-success-header').querySelector('p').textContent = 'You have been registered. We will notify you immediately if a spot opens up.';
+        } else {
+            submitBtn.textContent = 'CONFIRM BOOKING';
+            document.getElementById('booking-success-header').querySelector('h3').textContent = 'RESERVATION CONFIRMED!';
+            document.getElementById('booking-success-header').querySelector('p').textContent = 'Your spot is secured. Prepare your mind and body for the grind.';
+        }
+
+        // Reset form & states
+        document.getElementById('booking-form').reset();
+        document.getElementById('booking-form').classList.remove('hidden');
+        document.getElementById('booking-form-header').classList.remove('hidden');
+        document.getElementById('booking-success-header').classList.add('hidden');
+        document.getElementById('success-close-btn').classList.add('hidden');
+
+        window.TitanModal.open('booking-modal');
+    }
+
+    function closeBookingModal() {
+        window.TitanModal.close('booking-modal');
+    }
+
+    function handleBookingSubmit(event) {
+        event.preventDefault();
+        
+        const classId = document.getElementById('modal-class-id').value;
+        const type = document.getElementById('modal-booking-type').value;
+        const name = document.getElementById('user-name').value;
+        const email = document.getElementById('user-email').value;
+
+        const submitBtn = document.getElementById('booking-submit-btn');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-on-primary-fixed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span>PROCESSING...</span>
+        `;
+
+        // Simulate network latency for a high fidelity pro-feel
+        setTimeout(() => {
+            const card = document.querySelector(`.class-card[data-id="${classId}"]`);
+            const classTime = card ? card.getAttribute('data-time') : '08:00 - 09:30';
+            
+            // Save to LocalStorage
+            const bookings = JSON.parse(localStorage.getItem('titan_bookings') || '{}');
+            bookings[classId] = { type, name, email, time: classTime, timestamp: new Date().getTime() };
+            localStorage.setItem('titan_bookings', JSON.stringify(bookings));
+            
+            // Dispatch dynamic event
+            document.dispatchEvent(new CustomEvent('titanBookingConfirmed', { detail: { id: classId } }));
+
+            // Update UI card state
+            if (card) {
+                if (type === 'waitlist') {
+                    setCardToWaitlistJoined(card);
+                } else {
+                    setCardToBooked(card);
+                }
+            }
+
+            // Show success screen in modal
+            document.getElementById('booking-form').classList.add('hidden');
+            document.getElementById('booking-form-header').classList.add('hidden');
+            document.getElementById('booking-success-header').classList.remove('hidden');
+            document.getElementById('success-close-btn').classList.remove('hidden');
+            
+            // Re-enable button state
+            submitBtn.disabled = false;
+        }, 1200);
+    }
+
+    function setCardToBooked(card) {
+        // Change badge
+        const badge = card.querySelector('.badge');
+        if (badge) {
+            badge.textContent = 'Booked';
+            badge.className = 'badge absolute top-0 right-0 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-3 py-1 uppercase rounded-bl-DEFAULT neon-glow';
+        } else {
+            const newBadge = document.createElement('div');
+            newBadge.className = 'badge absolute top-0 right-0 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-3 py-1 uppercase rounded-bl-DEFAULT neon-glow';
+            newBadge.textContent = 'Booked';
+            card.appendChild(newBadge);
+        }
+        
+        // Change button state
+        const button = card.querySelector('button');
+        if (button) {
+            button.className = 'w-full bg-primary-fixed/20 text-primary-fixed border border-primary-fixed/30 font-headline-md text-headline-md py-2 uppercase cursor-default transition-all flex items-center justify-center gap-2';
+            button.innerHTML = `<span class="material-symbols-outlined text-[20px]">check_circle</span> RESERVED`;
+            // Remove click behavior
+            button.replaceWith(button.cloneNode(true));
+        }
+    }
+
+    function setCardToWaitlistJoined(card) {
+        // Change badge
+        const badge = card.querySelector('.badge');
+        if (badge) {
+            badge.textContent = 'Waitlisted';
+            badge.className = 'badge absolute top-0 right-0 bg-yellow-500/20 text-yellow-500 border border-yellow-500/30 font-label-sm text-label-sm px-3 py-1 uppercase rounded-bl-DEFAULT';
+        }
+        
+        // Change button state
+        const button = card.querySelector('button');
+        if (button) {
+            button.className = 'w-full bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 font-headline-md text-headline-md py-2 uppercase cursor-default transition-all';
+            button.textContent = `JOINED WAITLIST`;
+            // Remove click behavior
+            button.replaceWith(button.cloneNode(true));
+        }
+    }
+</script>
+</body>
+</html>

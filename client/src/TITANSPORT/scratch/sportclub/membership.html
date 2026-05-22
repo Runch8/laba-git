@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Membership Plans - TITAN PERFORMANCE CLUB</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Metropolis:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#e5e2e1",
+                      "on-secondary-container": "#bab8b7",
+                      "surface-container": "#1e2020",
+                      "surface": "#121414",
+                      "surface-container-high": "#282a2b",
+                      "on-secondary-fixed-variant": "#474646",
+                      "primary": "#ffffff",
+                      "tertiary-container": "#e5e2e1",
+                      "inverse-primary": "#576500",
+                      "secondary-fixed": "#e5e2e1",
+                      "inverse-surface": "#e2e2e2",
+                      "on-tertiary-fixed": "#1b1b1c",
+                      "on-tertiary": "#303030",
+                      "primary-container": "#d2f000",
+                      "on-surface": "#e2e2e2",
+                      "secondary": "#c8c6c5",
+                      "outline": "#909378",
+                      "primary-fixed": "#d2f000",
+                      "on-tertiary-container": "#656464",
+                      "surface-tint": "#b8d300",
+                      "on-secondary": "#313030",
+                      "primary-fixed-dim": "#b8d300",
+                      "inverse-on-surface": "#2f3131",
+                      "on-primary": "#2c3400",
+                      "surface-container-low": "#1a1c1c",
+                      "tertiary": "#ffffff",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "surface-container-highest": "#333535",
+                      "secondary-container": "#4a4949",
+                      "error": "#ffb4ab",
+                      "on-surface-variant": "#c6c9ab",
+                      "surface-bright": "#37393a",
+                      "on-error": "#690005",
+                      "outline-variant": "#454932",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-primary-fixed": "#191e00",
+                      "on-background": "#e2e2e2",
+                      "surface-container-lowest": "#0c0f0f",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "surface-variant": "#333535",
+                      "error-container": "#93000a",
+                      "on-primary-container": "#5d6b00",
+                      "surface-dim": "#121414",
+                      "on-primary-fixed-variant": "#414c00",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-error-container": "#ffdad6",
+                      "background": "#121414"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "section-gap": "120px",
+                      "base": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Metropolis"],
+                      "label-sm": ["Metropolis"],
+                      "display-lg-mobile": ["Anton"],
+                      "headline-md": ["Anton"],
+                      "headline-lg": ["Anton"],
+                      "display-lg": ["Anton"],
+                      "body-md": ["Metropolis"],
+                      "label-lg": ["Metropolis"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
+    <!-- Global CSS -->
+    <link href="assets/css/global.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full bg-surface/90 backdrop-blur-md transition-all duration-300" id="topNav">
+    <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary-fixed dark:text-primary-fixed italic uppercase">TITAN CLUB</a>
+    <div class="hidden md:flex items-center gap-6">
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="index.html">Home</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="schedule.html">Schedule</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="coaches.html">Coaches</a>
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface hover:text-primary-fixed transition-colors duration-300" href="membership.html">Membership</a>
+    </div>
+    <button class="hidden md:block bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md px-6 py-2 uppercase neon-glow hover:bg-surface-tint transition-colors">JOIN NOW</button>
+    <!-- Mobile Menu Icon -->
+    <button class="md:hidden text-primary-fixed">
+        <span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+    </button>
+</nav>
+
+<!-- Main Content -->
+<main class="flex-grow pt-[100px] md:pt-[120px] pb-section-gap px-margin-mobile md:px-margin-desktop">
+    <!-- Header Section -->
+    <header class="text-center mb-16 relative">
+        <div class="absolute inset-0 bg-primary-fixed/5 blur-[100px] rounded-full z-0 pointer-events-none"></div>
+        <h1 class="relative z-10 font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg uppercase italic mb-4">CHOOSE YOUR <span class="text-primary-fixed">PLAN</span></h1>
+        <p class="relative z-10 font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Commit to your potential. Select the membership tier that aligns with your goals and experience the elite environment of TITAN PERFORMANCE CLUB.</p>
+    </header>
+
+    <!-- Pricing Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-7xl mx-auto mb-section-gap relative z-10">
+        <!-- Tier 1: Starter -->
+        <div class="pricing-card bg-surface-container rounded-lg p-8 border border-white/10 flex flex-col hover:border-primary-fixed/30 transition-colors" data-tier="starter" data-price="29">
+            <h2 class="font-headline-lg text-headline-lg uppercase italic mb-2 text-white">STARTER</h2>
+            <div class="flex items-baseline mb-6">
+                <span class="font-display-lg-mobile text-display-lg-mobile text-primary-fixed">$29</span>
+                <span class="font-body-md text-body-md text-on-surface-variant ml-2">/mo</span>
+            </div>
+            <ul class="flex-grow space-y-4 mb-8">
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>Full access to gym facilities</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>2 group classes per month</span>
+                </li>
+                <li class="flex items-start text-on-surface-variant/40">
+                    <span class="material-symbols-outlined mr-3" style="font-variation-settings: 'FILL' 0;">cancel</span>
+                    <span>Personal Training sessions</span>
+                </li>
+                <li class="flex items-start text-on-surface-variant/40">
+                    <span class="material-symbols-outlined mr-3" style="font-variation-settings: 'FILL' 0;">cancel</span>
+                    <span>Private locker &amp; nutrition plan</span>
+                </li>
+            </ul>
+            <button onclick="openCheckoutModal('starter', 29)" class="tier-btn w-full bg-transparent border-2 border-white text-white font-headline-md text-headline-md uppercase py-3 rounded hover:bg-white hover:text-black transition-colors">Select Starter</button>
+        </div>
+
+        <!-- Tier 2: Pro (Highlighted) -->
+        <div class="pricing-card bg-surface-container-high rounded-lg p-8 border-2 border-primary-fixed flex flex-col neon-glow relative transform md:-translate-y-4" data-tier="pro" data-price="59">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg uppercase px-4 py-1 rounded-full whitespace-nowrap shadow-lg">Most Popular</div>
+            <h2 class="font-headline-lg text-headline-lg uppercase italic mb-2 text-primary-fixed">PRO</h2>
+            <div class="flex items-baseline mb-6">
+                <span class="font-display-lg-mobile text-display-lg-mobile text-white">$59</span>
+                <span class="font-body-md text-body-md text-on-surface-variant ml-2">/mo</span>
+            </div>
+            <ul class="flex-grow space-y-4 mb-8">
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>Unlimited access to gym facilities</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>Unlimited group classes</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>1 Personal Training session per month</span>
+                </li>
+                <li class="flex items-start text-on-surface-variant/40">
+                    <span class="material-symbols-outlined mr-3" style="font-variation-settings: 'FILL' 0;">cancel</span>
+                    <span>Private locker &amp; nutrition plan</span>
+                </li>
+            </ul>
+            <button onclick="openCheckoutModal('pro', 59)" class="tier-btn w-full bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md uppercase py-3 rounded hover:bg-primary-fixed-dim transition-colors shadow-[0_0_15px_rgba(210,240,0,0.5)]">Select Pro</button>
+        </div>
+
+        <!-- Tier 3: Elite -->
+        <div class="pricing-card bg-surface-container rounded-lg p-8 border border-white/10 flex flex-col hover:border-primary-fixed/30 transition-colors" data-tier="elite" data-price="99">
+            <h2 class="font-headline-lg text-headline-lg uppercase italic mb-2 text-white">ELITE</h2>
+            <div class="flex items-baseline mb-6">
+                <span class="font-display-lg-mobile text-display-lg-mobile text-primary-fixed">$99</span>
+                <span class="font-body-md text-body-md text-on-surface-variant ml-2">/mo</span>
+            </div>
+            <ul class="flex-grow space-y-4 mb-8">
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>Unlimited access to gym facilities</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>Unlimited group classes</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>4 Personal Training sessions per month</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="material-symbols-outlined text-primary-fixed mr-3" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span>Private locker &amp; custom nutrition plan</span>
+                </li>
+            </ul>
+            <button onclick="openCheckoutModal('elite', 99)" class="tier-btn w-full bg-transparent border-2 border-white text-white font-headline-md text-headline-md uppercase py-3 rounded hover:bg-white hover:text-black transition-colors">Select Elite</button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="max-w-4xl mx-auto">
+        <h2 class="font-headline-md text-headline-md uppercase italic text-center mb-12 text-white">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="bg-surface-container rounded-lg p-6 border border-white/5 cursor-pointer group" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-label-lg text-label-lg text-primary-fixed group-hover:text-white transition-colors">Can I cancel my membership at any time?</h3>
+                    <span class="material-symbols-outlined text-primary-fixed transition-transform duration-300">expand_more</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant hidden mt-2">Yes, our memberships are billed monthly. You can cancel or pause your membership at any time with a 30-day notice before your next billing cycle.</p>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="bg-surface-container rounded-lg p-6 border border-white/5 cursor-pointer group" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-label-lg text-label-lg text-primary-fixed group-hover:text-white transition-colors">Is there a free trial available?</h3>
+                    <span class="material-symbols-outlined text-primary-fixed transition-transform duration-300">expand_more</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant hidden mt-2">We offer a 1-day guest pass for local residents to experience the Titan facility. Please contact the front desk to arrange your visit.</p>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="bg-surface-container rounded-lg p-6 border border-white/5 cursor-pointer group" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-label-lg text-label-lg text-primary-fixed group-hover:text-white transition-colors">Do unused Personal Training sessions roll over?</h3>
+                    <span class="material-symbols-outlined text-primary-fixed transition-transform duration-300">expand_more</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant hidden mt-2">Personal Training sessions included in the PRO and ELITE plans must be used within the billing month and do not roll over to the next month.</p>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="bg-surface-container rounded-lg p-6 border border-white/5 cursor-pointer group" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-label-lg text-label-lg text-primary-fixed group-hover:text-white transition-colors">Can I upgrade or downgrade my plan?</h3>
+                    <span class="material-symbols-outlined text-primary-fixed transition-transform duration-300">expand_more</span>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant hidden mt-2">Absolutely. You can change your membership tier at the start of any new billing cycle. The difference will be prorated accordingly.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Interactive Checkout Modal -->
+<div id="checkout-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+    <div class="absolute inset-0 bg-background/80 backdrop-blur-md"></div>
+    <div class="modal-content relative z-10 w-full max-w-lg bg-surface-container border border-white/10 p-8 rounded-lg shadow-2xl transition-all duration-300">
+        <!-- Close Button -->
+        <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary-fixed transition-colors">
+            <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+        
+        <!-- Form Header -->
+        <div id="checkout-form-header">
+            <span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-widest block mb-1">MEMBERSHIP ACQUISITION</span>
+            <h3 class="font-headline-lg text-headline-lg uppercase italic text-white mb-6">TITAN <span id="checkout-plan-name" class="text-primary-fixed">PRO</span> CHECKOUT</h3>
+            
+            <!-- Order Summary -->
+            <div class="bg-surface-container-low border border-white/5 rounded-lg p-4 mb-6">
+                <div class="flex justify-between items-center pb-2 border-b border-white/5 mb-2">
+                    <span class="font-body-md text-on-surface-variant">Selected Plan:</span>
+                    <span class="font-label-lg text-white" id="checkout-summary-plan">Pro Tier</span>
+                </div>
+                <div class="flex justify-between items-center pb-2 border-b border-white/5 mb-2">
+                    <span class="font-body-md text-on-surface-variant">Billing Cycle:</span>
+                    <span class="font-label-lg text-white">Monthly</span>
+                </div>
+                <div class="flex justify-between items-center text-sm mb-1 opacity-70">
+                    <span>Base Amount:</span>
+                    <span id="checkout-base-price">$59.00</span>
+                </div>
+                <div class="flex justify-between items-center text-sm mb-3 opacity-70">
+                    <span>Tax (10%):</span>
+                    <span id="checkout-tax-price">$5.90</span>
+                </div>
+                <div class="flex justify-between items-center font-headline-md text-headline-md text-white border-t border-white/5 pt-3">
+                    <span>DUE TODAY:</span>
+                    <span class="text-primary-fixed" id="checkout-total-price">$64.90</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="checkout-success-header" class="hidden text-center py-6">
+            <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-full bg-primary-fixed/10 success-animate">
+                <svg class="w-12 h-12" viewBox="0 0 52 52">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            <h3 class="font-headline-lg text-headline-lg uppercase italic text-primary-fixed mb-2">PAYMENT SUCCESSFUL!</h3>
+            <p class="font-body-lg text-body-lg text-white uppercase italic tracking-wide mb-2" id="success-plan-badge">YOU ARE A PRO MEMBER</p>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xs mx-auto">Welcome to the inner circle. Your member badge is now active. Refreshing layout...</p>
+        </div>
+
+        <!-- Checkout Form -->
+        <form id="checkout-form" onsubmit="handleCheckoutSubmit(event)">
+            <input type="hidden" id="checkout-plan-id">
+            <input type="hidden" id="checkout-plan-cost">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                <div class="md:col-span-2">
+                    <label for="cardholder-name" class="font-label-lg text-label-lg text-white uppercase block mb-1">Full Name</label>
+                    <input type="text" id="cardholder-name" required placeholder="John Doe" class="w-full bg-surface-container-low text-white placeholder-on-surface-variant/40 border-b border-t-0 border-l-0 border-r-0 border-white/20 focus:border-primary-fixed focus:ring-0 px-0 py-2 transition-colors text-body-md">
+                </div>
+                <div class="md:col-span-2">
+                    <label for="card-number" class="font-label-lg text-label-lg text-white uppercase block mb-1">Card Number</label>
+                    <input type="text" id="card-number" required placeholder="4242 4242 4242 4242" maxlength="19" class="w-full bg-surface-container-low text-white placeholder-on-surface-variant/40 border-b border-t-0 border-l-0 border-r-0 border-white/20 focus:border-primary-fixed focus:ring-0 px-0 py-2 transition-colors text-body-md">
+                </div>
+                <div>
+                    <label for="card-expiry" class="font-label-lg text-label-lg text-white uppercase block mb-1">Expiration</label>
+                    <input type="text" id="card-expiry" required placeholder="MM/YY" maxlength="5" class="w-full bg-surface-container-low text-white placeholder-on-surface-variant/40 border-b border-t-0 border-l-0 border-r-0 border-white/20 focus:border-primary-fixed focus:ring-0 px-0 py-2 transition-colors text-body-md">
+                </div>
+                <div>
+                    <label for="card-cvv" class="font-label-lg text-label-lg text-white uppercase block mb-1">CVV</label>
+                    <input type="password" id="card-cvv" required placeholder="***" maxlength="3" class="w-full bg-surface-container-low text-white placeholder-on-surface-variant/40 border-b border-t-0 border-l-0 border-r-0 border-white/20 focus:border-primary-fixed focus:ring-0 px-0 py-2 transition-colors text-body-md">
+                </div>
+            </div>
+            
+            <button type="submit" id="checkout-submit-btn" class="w-full mt-8 bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md uppercase py-4 rounded neon-glow tracking-wider flex items-center justify-center gap-2">
+                <span>AUTHORIZE TRANSACTION</span>
+            </button>
+        </form>
+
+        <!-- Close button visible after success -->
+        <button id="checkout-success-btn" onclick="closeCheckoutModal()" class="hidden w-full mt-6 bg-transparent border-2 border-white/20 hover:border-primary-fixed hover:text-primary-fixed font-headline-md text-headline-md uppercase py-3 rounded transition-colors">
+            ENTER PERFORMANCE HUB
+        </button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between bg-surface-container-lowest border-t border-white/10 mt-auto">
+    <div>
+        <span class="font-headline-lg text-headline-lg text-primary-fixed italic block">TITAN CLUB</span>
+        <p class="font-body-md text-body-md text-on-surface-variant mt-2">© 2026 TITAN PERFORMANCE CLUB. ALL RIGHTS RESERVED.</p>
+    </div>
+    <div class="flex flex-wrap gap-6 justify-center md:justify-end">
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+        <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-fixed transition-all opacity-80 hover:opacity-100" href="#">Locations</a>
+    </div>
+</footer>
+
+<!-- Global JS -->
+<script src="assets/js/main.js"></script>
+
+<!-- Local script for membership interactions -->
+<script>
+    // 1. FAQ accordion dropdown toggle
+    function toggleFaq(element) {
+        const p = element.querySelector('p');
+        const icon = element.querySelector('.material-symbols-outlined');
+        if (p.classList.contains('hidden')) {
+            p.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+        } else {
+            p.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+        }
+    }
+
+    // 2. Checkout Modal Flow
+    const checkoutModal = document.getElementById('checkout-modal');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const activePlan = localStorage.getItem('titan_membership');
+        if (activePlan) {
+            highlightActivePlan(activePlan);
+        }
+    });
+
+    function openCheckoutModal(planId, price) {
+        // Prevent launching dynamic flow if plan is already active
+        const activePlan = localStorage.getItem('titan_membership');
+        if (activePlan === planId) return;
+
+        document.getElementById('checkout-plan-id').value = planId;
+        document.getElementById('checkout-plan-cost').value = price;
+
+        // Render Order Summary
+        document.getElementById('checkout-plan-name').textContent = planId.toUpperCase();
+        document.getElementById('checkout-summary-plan').textContent = `${planId.charAt(0).toUpperCase() + planId.slice(1)} Tier`;
+        
+        const baseVal = parseFloat(price);
+        const taxVal = baseVal * 0.1;
+        const totalVal = baseVal + taxVal;
+
+        document.getElementById('checkout-base-price').textContent = `$${baseVal.toFixed(2)}`;
+        document.getElementById('checkout-tax-price').textContent = `$${taxVal.toFixed(2)}`;
+        document.getElementById('checkout-total-price').textContent = `$${totalVal.toFixed(2)}`;
+
+        // Reset form state
+        document.getElementById('checkout-form').reset();
+        document.getElementById('checkout-form').classList.remove('hidden');
+        document.getElementById('checkout-form-header').classList.remove('hidden');
+        document.getElementById('checkout-success-header').classList.add('hidden');
+        document.getElementById('checkout-success-btn').classList.add('hidden');
+
+        window.TitanModal.open('checkout-modal');
+    }
+
+    function closeCheckoutModal() {
+        window.TitanModal.close('checkout-modal');
+    }
+
+    function handleCheckoutSubmit(event) {
+        event.preventDefault();
+        
+        const planId = document.getElementById('checkout-plan-id').value;
+        const submitBtn = document.getElementById('checkout-submit-btn');
+        
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-on-primary-fixed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span>TRANSACTING SECURELY...</span>
+        `;
+
+        setTimeout(() => {
+            // Save state to LocalStorage
+            localStorage.setItem('titan_membership', planId);
+            
+            // Render Success UI
+            document.getElementById('success-plan-badge').textContent = `YOU ARE AN ${planId.toUpperCase()} MEMBER`;
+            
+            document.getElementById('checkout-form').classList.add('hidden');
+            document.getElementById('checkout-form-header').classList.add('hidden');
+            document.getElementById('checkout-success-header').classList.remove('hidden');
+            document.getElementById('checkout-success-btn').classList.remove('hidden');
+
+            submitBtn.disabled = false;
+            
+            // Live update badge in nav
+            if (window.updateMembershipBadge) window.updateMembershipBadge();
+            highlightActivePlan(planId);
+        }, 1500);
+    }
+
+    function highlightActivePlan(planId) {
+        document.querySelectorAll('.pricing-card').forEach(card => {
+            const cardTier = card.getAttribute('data-tier');
+            const button = card.querySelector('button');
+
+            if (cardTier === planId) {
+                // Highlight active plan card
+                card.className = 'pricing-card bg-surface-container-high rounded-lg p-8 border-2 border-primary-fixed flex flex-col neon-glow relative transform md:-translate-y-4';
+                
+                // Add/update "Active" banner
+                let banner = card.querySelector('.absolute');
+                if (!banner) {
+                    banner = document.createElement('div');
+                    card.appendChild(banner);
+                }
+                banner.className = 'absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg uppercase px-4 py-1 rounded-full whitespace-nowrap shadow-lg';
+                banner.textContent = 'Active Plan';
+
+                if (button) {
+                    button.className = 'w-full bg-primary-fixed/20 text-primary-fixed border border-primary-fixed/30 font-headline-md text-headline-md py-3 rounded cursor-default uppercase tracking-wider flex items-center justify-center gap-2';
+                    button.innerHTML = `<span class="material-symbols-outlined text-[20px]">check_circle</span> ACTIVE PLAN`;
+                }
+            } else {
+                // Remove highlight from others
+                card.className = 'pricing-card bg-surface-container rounded-lg p-8 border border-white/10 flex flex-col hover:border-primary-fixed/30 transition-colors';
+                
+                // Remove any banners
+                const banner = card.querySelector('.absolute');
+                if (banner && banner.textContent === 'Active Plan') {
+                    banner.remove();
+                } else if (banner && cardTier !== 'pro') {
+                    banner.remove();
+                }
+
+                if (button) {
+                    if (cardTier === 'pro') {
+                        button.className = 'w-full bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md uppercase py-3 rounded hover:bg-primary-fixed-dim transition-colors';
+                        button.innerHTML = 'Select Pro';
+                    } else {
+                        button.className = 'w-full bg-transparent border-2 border-white text-white font-headline-md text-headline-md uppercase py-3 rounded hover:bg-white hover:text-black transition-colors';
+                        button.innerHTML = `Select ${cardTier.charAt(0).toUpperCase() + cardTier.slice(1)}`;
+                    }
+                }
+            }
+        });
+    }
+
+    // Auto card formatting helper
+    document.getElementById('card-number').addEventListener('input', function (e) {
+        let target = e.target;
+        let position = target.selectionEnd;
+        let length = target.value.length;
+        
+        target.value = target.value.replace(/[^\d]/g, '').replace(/(.{4})/g, '$1 ').trim();
+        
+        let diff = target.value.length - length;
+        if (diff > 0) {
+            target.setSelectionRange(position + diff, position + diff);
+        }
+    });
+
+    document.getElementById('card-expiry').addEventListener('input', function (e) {
+        let value = e.target.value;
+        if (value.length === 2 && !value.includes('/')) {
+            e.target.value = value + '/';
+        }
+    });
+</script>
+</body>
+</html>
